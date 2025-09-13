@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #002339;
+  color: #fff;
+}
+
+.container {
+  margin: 8% auto;
+  width: 90%;
+  max-width: 700px;
+  padding: 0 10px;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.container h1 span {
+  color: #019f55;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+}
+
+.display {
+  margin: 25px 0;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 6px;
+  gap: 10px;
+  flex-wrap: wrap; /* small screens ke liye wrap */
+}
+
+.display input {
+  font-size: 28px;
+  width: 100%;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  color: #222;
+  min-width: 150px;
+}
+
+.display i {
+  font-size: 28px;
+  color: #019f55;
+  cursor: pointer;
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background-color: #019f55;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container button i {
+  font-size: 24px;
+  margin-right: 6px;
+  color: #fff;
+}
+
+/* -------- Responsive Media Queries -------- */
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .display input {
+    font-size: 22px;
+  }
+
+  .display i {
+    font-size: 24px;
+  }
+
+  .container button {
+    font-size: 18px;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 12% auto;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .display {
+    padding: 15px;
+  }
+
+  .display input {
+    font-size: 18px;
+  }
+
+  .display i {
+    font-size: 20px;
+  }
+
+  .container button {
+    width: 100%; /* mobile pe button full width */
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
